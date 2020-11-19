@@ -1,0 +1,14 @@
+{
+  "name": "hashdirbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "cool person",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "node-fetch": "^2.6.1"
+  }
+}
