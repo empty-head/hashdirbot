@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "cool person",
+  "author": "coolperson",
   "dependencies": {
     "discord.js": "^12.4.1",
     "node-fetch": "^2.6.1"
