@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const querystring = require('querystring');
-
+const token = fs.readFileSync("token.txt").toString();
+const apikey = fs.readFileSync("apikey.txt").toString();
 const client = new Discord.Client();
 const prefix = '>';
 
@@ -25,7 +26,7 @@ client.on('message', async message => {
 
 		const query = args.join(' ');
 		console.log(query);
-		const pog = await fetch(`https://hashdir.a2hosted.com/api/v1/?query=${query}&token=69MPISR3Q87GBA0WFNZ3`).then(response => response.json());
+		const pog = await fetch(`https://hashdir.a2hosted.com/api/v1/?query=${query}&token=${apikey}`).then(response => response.json());
 		
 		try{
 			if (!pog.length) {
@@ -68,4 +69,4 @@ client.on('message', async message => {
 	}
 });
 
-client.login('Nzc4NTQwODkzMDA2NzI1MTMy.X7TetQ.Y7JhWJtjy21JINw6TRW9pQL0YyI');
+client.login(token);
