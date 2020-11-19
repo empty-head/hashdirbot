@@ -1,1 +1,1 @@
-"# hashdirbot" 
+"#hashdirbot AAAAAAAAAAAAAAAAAAAAAA" 
